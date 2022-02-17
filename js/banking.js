@@ -123,8 +123,7 @@ document.getElementById('save-button').addEventListener('click', function () {
     const previousRemainingTotal = parseFloat(RemainingTotalText);
 
     // RemainingTotal.innerText = (incomeInput - expensesTotal.innerText) - ((incomeInput * saveInput) / 100);
-    SavingTotal.innerText = (incomeInput * saveInput) / 100;
-    balanceTotal.innerText = incomeInput - expensesTotal.innerText;
+    
 
     RemainingTotal.innerText = balanceTotal.innerText - SavingTotal.innerText;
 
