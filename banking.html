@@ -22,136 +22,229 @@
 
 
         <section class="mt-8">
-            <div class="grid  grid.cols-sm-12  grid-cols-2 gap-4">
-                <!-- <div class="col-sm-12 col-md-6 col-lg-6"></div> -->
-                <div class=" p-8 rounded">
+            <div class="row gy-5">
+                <!-- <div class="grid  grid.cols-sm-12  grid-cols-2 gap-4"> -->
 
-                    <div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-6"></div> -->
+                    <div class=" p-8 rounded">
 
-                        <img src="T9JMAG.jpeg" class="d-block w-100 h-50" alt="...">
+                        <div>
 
+                            <img src="T9JMAG.jpeg" class="d-block w-100 h-50" alt="...">
+
+                        </div>
                     </div>
                 </div>
 
                 <!-- Start -->
+                <div class="col-sm-12 col-md-6 col-lg-6">
 
 
-                <div class="bg-purple-100 p-8 rounded">
+                    <div class="bg-purple-100 p-8 rounded">
 
 
-                    <h3 class="text-2xl text-center ">Income: </h3>
+                        <h3 class="text-2xl text-center ">Income: </h3>
 
 
-                    <div class="d-flex justify-content-center pt-3">
+                        <div class="d-flex justify-content-center pt-3">
 
-                        <!-- <div class="grid grid-cols-2 "></div> -->
-                        <div>
-                            <p>Income</p>
+                            <!-- <div class="grid grid-cols-2 "></div> -->
+
+                            <!-- Income -->
+                            <div>
+                                <p>Income</p>
+                            </div>
+
+                            <div>
+                                <input id="income-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
+                                    type="text" placeholder="Enter Income">
+                            </div>
+
+
                         </div>
 
-                        <div>
-                            <input id="income-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
-                                type="text" placeholder="Enter Income">
+                        <!-- Expenses -->
+
+
+                        <!-- Food -->
+                        <h3 class="text-2xl text-center ">Expenses</h3>
+
+
+                        <div class="d-flex justify-content-center pt-3">
+                            <div>
+                                <p>Food</p>
+                            </div>
+
+                            <div>
+                                <input id="expenses-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
+                                    type="text" placeholder="Enter food price">
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- Rent -->
+                        <div class="d-flex justify-content-center pt-3">
+                            <div>
+                                <p>Rent</p>
+                            </div>
+
+                            <div>
+
+                                <input id="rent-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
+                                    type="text" placeholder="$ Enter Total rent price">
+
+
+                            </div>
                         </div>
 
 
-                    </div>
 
+                        <!-- Clothes -->
 
-                    <h3 class="text-2xl text-center ">Expenses</h3>
+                        <div class="d-flex justify-content-center pt-3">
+                            <div>
+                                <p>Clothes</p>
+                            </div>
 
+                            <div>
 
-                    <div>
-                        <p>Food</p>
-                        <input id="expenses-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
-                            type="text" placeholder="Enter Total food price">
-
-
-
-                    </div>
-
-                    <div>
-                        <p>Rent</p>
-                        <input id="rent-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2" type="text"
-                            placeholder="$ Enter Total rent price">
+                                <input id="clothes-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
+                                    type="text" placeholder="$ Enter Total Clothes price">
 
 
 
-                    </div>
-
-                    <div>
-                        <p>Clothes</p>
-                        <input id="clothes-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2"
-                            type="text" placeholder="$ Enter Total Clothes price">
-
-
-
-                        <button id="calculate-button"
-                            class="bg-yellow-600 px-4 rounded py-2  text-white font-medium">Calculate</button>
-                    </div>
-
-
-
-                    <!-- Balance and Transaction -->
-
-
-                    <div class="">
-
-                        <div class=" p-8 ">
-                            <h3 class="text-center text-2xl">Total Expenses :</h3>
-                            <h4 class="text-2xl text-center">$<span id="expenses-total">00</span></h4>
-                        </div>
-                        <div class=" p-8 ">
-                            <h3 class="text-2xl text-center">Balance :</h3>
-                            <h4 class="text-2xl text-center">$<span id="balance-total">00</span></h4>
+                                <button id="calculate-button"
+                                    class="bg-yellow-600 px-4 rounded py-2  text-white font-medium">Calculate</button>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div>
-                        <p>Save : </p>
-                        <input id="save-input" class="border block border-gray-400	rounded w-3/4 mb-4 px-2" type="text"
-                            placeholder="$ Enter saved Percentage">
-
-                        <p>%</p>
-
-                        <button id="save-button"
-                            class="bg-yellow-600 px-4 rounded py-2  text-white font-medium">Save</button>
-
-                    </div>
 
 
+                        <!-- Balance and Transaction -->
+                        <!-- Total Expenses -->
 
-                    <!-- Saving amount -->
+
+                        <div class="">
+
+                            <div class=" p-8 ">
 
 
-                    <div class="">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <div>
+                                        <h3 class="text-center text-2xl">Total Expenses :</h3>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-2xl text-center">$<span id="expenses-total">00</span></h4>
+                                    </div>
 
-                        <div class=" p-8 ">
-                            <h3 class="text-center text-2xl">Saving Amount :</h3>
-                            <h4 class="text-2xl text-center">$<span id="Saving-total">00</span></h4>
+                                </div>
+
+
+
+
+
+
+
+                                <div class=" p-8 ">
+
+
+                                    <div class="d-flex justify-content-center pt-3">
+                                        <div>
+                                            <h3 class="text-2xl text-center">Balance :</h3>
+                                        </div>
+
+                                        <div>
+
+
+
+
+                                            <h4 class="text-2xl text-center">$<span id="balance-total">00</span></h4>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- Save -->
+
+                                    <div class="d-flex justify-content-center pt-5">
+                                        <div>
+                                            <p>Save : </p>
+                                        </div>
+
+                                        <div>
+                                            <input id="save-input"
+                                                class="border block border-gray-400	rounded w-3/4 mb-4 px-2" type="text"
+                                                placeholder="$ Enter saved Percentage">
+
+                                        </div>
+                                        <div>
+                                            <p>%</p>
+
+                                        </div>
+                                        <div>
+                                            <button id="save-button"
+                                                class="bg-yellow-600 px-4 rounded py-2  text-white font-medium">Save</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- Saving amount -->
+
+
+                                <div class="">
+
+                                    <div class=" p-8 ">
+
+
+                                        <div class="d-flex justify-content-center ">
+                                            <div>
+                                                <h3 class="text-center text-2xl">Saving Amount :</h3>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-2xl text-center">$<span id="Saving-total">00</span></h4>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class=" p-8 ">
+
+
+                                        <div class="d-flex justify-content-center pt-3">
+                                            <div>
+                                                <h3 class="text-2xl text-center">Remaining Balance :</h3>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-2xl text-center">$<span id="Remaining">00</span>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
                         </div>
-                        <div class=" p-8 ">
-                            <h3 class="text-2xl text-center">Remaining Balance :</h3>
-                            <h4 class="text-2xl text-center">$<span id="Remaining-balance-total">00</span></h4>
-                        </div>
-
                     </div>
-
-
-
-
-
-
-
-
-
 
 
                 </div>
-
-
-            </div>
         </section>
 
 
